@@ -1,0 +1,11 @@
+ @model WeatherForecastApp.Models.WeatherModel
+
+     <div class="container mt-5">
+         <h1 class="text-center">Weather in @Model.Location</h1>
+         <div class="text-center mt-4">
+             <img src="@Model.Icon" alt="Weather Icon" />
+             <h2>@Model.Temperature</h2>
+             <p>@Model.WeatherCondition</p>
+             <a href="/Weather" class="btn btn-primary">Search Again</a>
+         </div>
+     </div>
